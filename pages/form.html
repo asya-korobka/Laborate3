@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- Вибірка даних -->
+    <fieldset class="Information"> 
+        <!-- Заголовок поля -->
+        <legend><b>Інформація</b></legend> 
+        <!-- Поле для введення ім'я -->
+        <label> Your name <br><input type="text" name="firstname" required placeholder="Enter your name"><br></label> 
+        <!-- Поле для введення віку -->
+        <label> Your age <input type="number" name="quantity" min="1" max="100" required placeholder="Enter your age"><br></label>
+        <!-- Поле для введення пароля -->
+        <label> Password <br><input type="password" required placeholder="Enter your password"><br><br></label> 
+        <!-- Поле вибору статі -->
+        <input class="stat" type="radio" name="gender" checked> Male
+        <input class="stat" type="radio" name="gender" > Female<br><br>
+        <!-- Прапорець для пам'яті -->
+        <input type="checkbox" name="vehicle1" value="Remember">Remember me<br> <br>
+        <!-- Вибір сімейного стану -->
+        <label> Marital status <br> 
+            <select> 
+                <option>married</option> 
+                <option>unmarried</option> 
+            </select> 
+            <br><br>
+        </label> 
+        <!-- Поле для вибору дати народження -->
+        <label> Date of birth <br><input type="text" name="dateofbirth" required><br></label> 
+        <!-- Вибір міста -->
+        <label><br> Select your city
+            <br><select> 
+                <option>Kyiv</option>
+                <option>Lviv</option>
+                <option>Odesa</option>
+                <option>Kharkiv</option>
+                <option>Dnipro</option>
+                <option>Lutsk</option>
+                <option>Uzhhorod</option>
+                <option>Amounts</option>
+                <option>Zhytomyr</option>
+            </select><br> 
+        </label> 
+    </fieldset> 
+    <!-- Кнопка для відправки форми -->
+    <input type="submit" value="Submit">
+    <!-- Кнопка для скидання введених даних -->
+    <input type="reset" value="Reset">
+</body>
+</html>
